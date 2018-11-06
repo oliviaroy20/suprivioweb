@@ -3,8 +3,17 @@
     <title>Suprivio</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
   <body>
+	  <div id="nav-placeholder"></div>
+	  <script>
+	  $(function(){
+		  $("#nav-placeholder").load("navbar.html");
+	  });
+	  </script>
+	  
+
 	  <div id="homepageCarousel" class="carousel slide" data-ride="carousel">
     	<ol class="carousel-indicators">
 	      <li data-target="#homepageCarousel" data-slide-to="0" class="active"></li>
