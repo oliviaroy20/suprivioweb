@@ -11,6 +11,8 @@
 }
 .carousel-inner{
 	background-color: lightgrey;
+	height: 500px;
+	max-height: 500px;
 
 }
 .carousel{
