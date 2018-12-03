@@ -22,8 +22,6 @@
 }
 .signin {
 	margin-top: 30px;
-	display: flex;
-	align-items: center;
 }
 @media (min-width: 992px)
 .col-lg-4{
