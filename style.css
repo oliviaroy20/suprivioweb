@@ -1,8 +1,10 @@
 .carousel-item img{
-	        background-repeat: no-repeat;
-	        background-size: cover;
-	        background-position: center;
-	        min-height:400px;
+	width: auto;
+	height: 500px;
+	max-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
 }
 .carousel{
