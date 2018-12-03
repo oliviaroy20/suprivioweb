@@ -1,8 +1,10 @@
-/* .carousel-item img{
-	width: auto;
-	height: 500px;
-	max-height: 500px;
-} */
+.carousel-item img{
+	        background-repeat: no-repeat;
+	        background-size: cover;
+	        background-position: center;
+	        min-height:400px;
+
+}
 .carousel{
 	margin-bottom: 4rem;
 }
