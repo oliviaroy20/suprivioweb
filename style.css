@@ -6,6 +6,7 @@
     background-size: cover;
     background-position: center;
 	background-color: lightgrey;
+	float: right;
 
 }
 .carousel-inner{
@@ -16,9 +17,7 @@
 	margin-bottom: 4rem;
 }
 
-#logo_car {
-	float:right;
-}
+
 .row {
 	display: flex;
 	flex-wrap: wrap;
