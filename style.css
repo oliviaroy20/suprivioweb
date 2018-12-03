@@ -11,8 +11,7 @@
 }
 .carousel-inner{
 	background-color: lightgrey;
-	color: black;
-	text-align: center;
+
 }
 .carousel{
 	margin-bottom: 4rem;
@@ -20,6 +19,10 @@
 
 #logo_car {
 	float:right;
+}
+.carousel-caption{
+	color: black;
+	text-align: center;
 }
 .row {
 	display: flex;
