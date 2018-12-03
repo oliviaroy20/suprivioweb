@@ -16,6 +16,10 @@
 	margin-bottom: 1.5rem;
 	text-align: center;
 }
+
+.contatct {
+	margin-top: auto;
+}
 @media (min-width: 992px)
 .col-lg-4{
 	flex-grow: 0;
