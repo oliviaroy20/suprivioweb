@@ -34,7 +34,10 @@
 	display: block;
 }
 .navbar{
-	background-color: lightgrey; 
+	background-color: lightgrey;
+}
+.cardheader{
+	background-color: #1b2a51;
 }
 @media (min-width: 992px)
 .col-lg-4{
