@@ -10,6 +10,7 @@
 }
 .carousel-inner{
 	background-color: lightgrey;
+	color: black;
 }
 .carousel{
 	margin-bottom: 4rem;
