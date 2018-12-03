@@ -13,6 +13,7 @@
 	background-color: lightgrey;
 	height: 500px;
 	max-height: 500px;
+	text-align: right;
 
 }
 .carousel{
@@ -20,8 +21,7 @@
 }
 
 #logo_car {
-	justify-content: flex-end;
-	align-self: flex-end;
+	display: inline-block
 }
 .carousel-caption{
 	color: black;
