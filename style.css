@@ -20,7 +20,7 @@
 }
 
 #logo_car {
-	margin-right: auto;
+	justify-content: flex-end;
 }
 .carousel-caption{
 	color: black;
