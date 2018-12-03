@@ -13,6 +13,9 @@
 .carousel-inner{
 	background-color: #1b2a51;
 }
+#logo_car {
+	float:right;
+}
 .row {
 	display: flex;
 	flex-wrap: wrap;
