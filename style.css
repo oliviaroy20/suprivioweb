@@ -13,13 +13,15 @@
 	background-color: lightgrey;
 	height: 500px;
 	max-height: 500px;
-	text-align: right;
+
 
 }
 .carousel{
 	margin-bottom: 4rem;
 }
-
+.carousel_img {
+	text-align: right;
+}
 #logo_car {
 	display: inline-block
 }
