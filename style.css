@@ -33,9 +33,7 @@
     font-size: 16px;
 	display: block;
 }
-.right-button {
-	float: right;
-}
+
 @media (min-width: 992px)
 .col-lg-4{
 	flex-grow: 0;
