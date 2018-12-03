@@ -21,6 +21,7 @@
 
 #logo_car {
 	justify-content: flex-end;
+	align-self: flex-end;
 }
 .carousel-caption{
 	color: black;
