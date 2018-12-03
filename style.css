@@ -33,7 +33,7 @@
     font-size: 16px;
 	display: block;
 }
-#login {
+.right-button {
 	float: right;
 }
 @media (min-width: 992px)
