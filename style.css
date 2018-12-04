@@ -115,4 +115,7 @@
 .fixed-top{
 	position:relative;
 }
+.marketing{
+	margin-top: 15px; 
+}
 }
