@@ -90,6 +90,7 @@
 @media (max-width: 768px) {
 #logo-car{
 	margin:0px;
+	height: 50%; 
 
 }
 
@@ -98,11 +99,7 @@
 	float: right;
 }
 
-#group_pic{
-	max-width: 100%;
-	width: 50%;
-	height: auto;
-}
+
 .carousel-item img{
 	width: auto;
 	height: 200px;
