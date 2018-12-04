@@ -28,6 +28,7 @@
 #group_car{
 	top:0;
 	right: 0;
+	float: right; 
 }
 .carousel-caption{
 	color: #1b2a51;
