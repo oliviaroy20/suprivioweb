@@ -26,8 +26,9 @@
 	margin-bottom:50px;
 }
 #group_car{
+	margin-bottom:30%;
 	position: relative;
-	left: 50%;
+	left: 60%;
 	float: right;
 }
 .carousel-caption{
