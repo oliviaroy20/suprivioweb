@@ -6,8 +6,6 @@
     background-size: cover;
     background-position: center;
 	background-color: lightgrey;
-
-
 }
 .carousel-inner{
 	background-color: lightgrey;
@@ -16,6 +14,7 @@
 }
 .carousel{
 	margin-bottom: 4rem;
+	margin-top: 3.6rem;
 }
 .carousel_img {
 	text-align: right;
