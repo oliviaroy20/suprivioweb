@@ -89,25 +89,26 @@
 .team h4{
 	color: #1b2a51;
 }
-@media (min-width: 992px)
+@media (min-width: 992px){
 .col-lg-4{
 	flex-grow: 0;
 	flex-shrink: 0;
-	flex-basis: 33.333333%
+	flex-basis: 33.333333%;
 	max-width: 33.33333333333;
-}
-@media(min-width: 992px)
+	}
+
 #logo-car{
 	margin:0px;
 }
-@media (min-width: 992px)
+
 #group_car {
 	left: 100%;
 	position: relative;
 	float: right;
 
 }
-@media (min-width: 992px)
+
 #group_pic{
 	width: 40%;
+}
 }
