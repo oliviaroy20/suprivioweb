@@ -96,11 +96,12 @@
 }
 #logo_car_text{
 	font-size: 0px;
+	display: none;
 }
-
 
 #group_car {
 	font-size: 0px;
+	display: none;
 }
 #group_pic{
 	width:50%;
