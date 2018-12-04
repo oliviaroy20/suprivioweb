@@ -103,5 +103,6 @@
 
 #group_pic{
 	width: 40%;
+	height: auto; 
 }
 }
