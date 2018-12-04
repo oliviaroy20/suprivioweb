@@ -34,9 +34,9 @@
 	float: right;
 }
 #placeholder_pic{
-	height: 25%;
-	width: auto;
-	padding: 10px;
+	width: 90%;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 .carousel-caption{
 	color: #1b2a51;
