@@ -107,6 +107,9 @@
     font-size: 1.25rem;
     font-weight: 300;
 }
+.featurette-divider {
+    margin: 5rem 0;
+}
 @media (max-width: 768px) {
 .carousel{
 	display: none;
