@@ -79,6 +79,13 @@
 	background-color: #1b2a51;
 	color: white;
 }
+.about_us{
+	padding-top: 15px;
+	color: #1b2a51;
+}
+.team{
+	colog: #1b2a51;
+}
 @media (min-width: 992px)
 .col-lg-4{
 	flex-grow: 0;
