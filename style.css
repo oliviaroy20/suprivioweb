@@ -90,13 +90,6 @@
 	color: #1b2a51;
 }
 @media (max-width: 768px) {
-.col-lg-4{
-	flex-grow: 0;
-	flex-shrink: 0;
-	flex-basis: 33.333333%;
-	max-width: 33.33333333333;
-	}
-
 #logo-car{
 	margin:0px;
 }
