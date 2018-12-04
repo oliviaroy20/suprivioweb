@@ -116,6 +116,9 @@
 	position:relative;
 }
 .marketing{
-	margin-top: 15px; 
+	margin-top: 15px;
+}
+.collapse{
+	margin-right: 100%
 }
 }
