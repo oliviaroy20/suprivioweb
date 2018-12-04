@@ -84,3 +84,6 @@
 #logo-car{
 	margin:0px;
 }
+#group_car{
+	flex-shrink: 50;
+}
