@@ -30,6 +30,8 @@
 	bottom: auto;
 	right: 5%;
 	left: auto;
+	text-align: right;
+	
 }
 .carousel-caption{
 	color: #1b2a51;
