@@ -100,7 +100,8 @@
 }
 
 #group_pic{
-	width: 10%;
+	max-width: 100%;
+	width: 100px; 
 	height: auto;
 
 }
