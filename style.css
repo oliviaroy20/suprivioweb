@@ -86,6 +86,9 @@
 .team{
 	color: #1b2a51;
 }
+.team h4{
+	color: #1b2a51;
+}
 @media (min-width: 992px)
 .col-lg-4{
 	flex-grow: 0;
