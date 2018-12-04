@@ -33,6 +33,10 @@
 	left: 60%;
 	float: right;
 }
+#placeholder_pic{
+	height: 50%;
+	width: auto; 
+}
 .carousel-caption{
 	color: #1b2a51;
 	text-align: center;
