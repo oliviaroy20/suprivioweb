@@ -89,7 +89,7 @@
 .team h4{
 	color: #1b2a51;
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
 .col-lg-4{
 	flex-grow: 0;
 	flex-shrink: 0;
