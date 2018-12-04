@@ -46,9 +46,6 @@
 	margin-right: -15px;
 	margin-left: -15px;
 }
-.col-left, .col-right {
-    vertical-align: middle;
-}
 .marketing .col-lg-4{
 	margin-bottom: 1.5rem;
 	text-align: center;
@@ -98,7 +95,7 @@
     font-weight: 300;
     line-height: 1;
     letter-spacing: -.05rem;
-	margin-top: 7em;
+	margin-top: 3em;
 	font-size: 50px;
 }
 .lead {
@@ -111,6 +108,9 @@
 @media (max-width: 768px) {
 .carousel{
 	display: none;
+}
+.featurette-heading{
+	margin-top: 15px; 
 }
 
 }
