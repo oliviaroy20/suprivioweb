@@ -23,7 +23,7 @@
 	text-align: right;
 }
 #logo_car {
-	display: inline-block
+	margin-bottom:50px;
 }
 .carousel-caption{
 	color: #1b2a51;
@@ -69,4 +69,7 @@
 	flex-shrink: 0;
 	flex-basis: 33.333333%
 	max-width: 33.33333333333;
+}
+#logo-car{
+	margin:0px;
 }
