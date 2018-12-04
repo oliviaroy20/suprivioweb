@@ -26,7 +26,7 @@
 	margin-bottom:50px;
 }
 #group_car{
-	margin-bottom:30%;
+	margin-bottom:20%;
 	position: relative;
 	left: 60%;
 	float: right;
@@ -45,7 +45,9 @@
 	margin-bottom: 1.5rem;
 	text-align: center;
 }
-
+.blue_button {
+	background-color: #1b2a51;
+}
 .contact {
 	margin-top: 30px;
 }
