@@ -88,38 +88,8 @@
 	color: #1b2a51;
 }
 @media (max-width: 768px) {
-#logo_car{
-	margin:0px;
-	width: 30%;
-	height: auto;
-	
-
-}
-#logo_car_text{
-	font-size: 0px;
+.carousel{
 	display: none;
-}
-
-#group_car {
-	display: none;
-}
-
-
-.carousel-item img{
-	width: auto;
-	height: 200px;
-	max-height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-	background-color: lightgrey;
-
-
-}
-.carousel-inner{
-	background-color: lightgrey;
-	height: 200px;
-	max-height: 200px;
 }
 
 }
