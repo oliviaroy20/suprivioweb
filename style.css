@@ -90,6 +90,7 @@
 @media (max-width: 768px) {
 #logo-car{
 	margin:0px;
+
 }
 
 #group_car {
@@ -99,9 +100,24 @@
 
 #group_pic{
 	max-width: 100%;
-	width: 10px;
+	width: 50%;
 	height: auto;
+}
+.carousel-item img{
+	width: auto;
+	height: 200px;
+	max-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-color: lightgrey;
 
+
+}
+.carousel-inner{
+	background-color: lightgrey;
+	height: 200px;
+	max-height: 200px;
 }
 
 }
