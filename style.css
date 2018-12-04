@@ -92,6 +92,7 @@
 	margin:0px;
 	width: 30%;
 	height: auto;
+	
 
 }
 #logo_car_text{
@@ -100,11 +101,7 @@
 }
 
 #group_car {
-	font-size: 0px;
 	display: none;
-}
-#group_pic{
-	width:50%;
 }
 
 
