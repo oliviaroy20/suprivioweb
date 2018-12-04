@@ -103,6 +103,7 @@
 #group_car {
 	left: 100%;
 	position: relative;
+	float: right;
 
 }
 @media (min-width: 992px)#group_pic{
