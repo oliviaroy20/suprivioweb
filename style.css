@@ -110,7 +110,9 @@
 	display: none;
 }
 .featurette-heading{
-	margin-top: 15px; 
+	margin-top: 15px;
 }
-
+nav{
+	padding-bottom: 10px; 
+}
 }
