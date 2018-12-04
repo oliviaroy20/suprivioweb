@@ -121,4 +121,7 @@
 .collapse{
 	margin-right: 100%;
 }
+#signin_button{
+	display:none;
+}
 }
