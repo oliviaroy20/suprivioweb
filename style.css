@@ -24,6 +24,11 @@
 }
 #logo_car {
 	margin-bottom:50px;
+	text-align: right;
+}
+#grouop_car {
+	margin-bottom:200px;
+	text-align: left;
 }
 .carousel-caption{
 	color: #1b2a51;
