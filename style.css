@@ -88,18 +88,24 @@
 	color: #1b2a51;
 }
 @media (max-width: 768px) {
-#logo-car{
+#logo_car{
 	margin:0px;
-	width: 50%;
+	width: 30%;
 
 }
+#logo_car_text{
+	margin:0px;
+	width: 30%;
+
+}
+
 
 #group_car {
 	position: relative;
 	float: right;
 }
 #group_pic{
-	width:80%; 
+	width:50%;
 }
 
 
