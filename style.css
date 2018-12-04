@@ -90,13 +90,16 @@
 @media (max-width: 768px) {
 #logo-car{
 	margin:0px;
-	height: 50%; 
+	width: 50%;
 
 }
 
 #group_car {
 	position: relative;
 	float: right;
+}
+#group_pic{
+	width:80%; 
 }
 
 
