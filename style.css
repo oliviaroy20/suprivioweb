@@ -90,5 +90,6 @@
 	margin-bottom:0;
 }
 #group_pic{
-	flex-shrink: 50%; 
+	width: 50%
+
 }
