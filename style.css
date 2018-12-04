@@ -95,14 +95,12 @@
 }
 
 #group_car {
-	left: 100%;
 	position: relative;
 	float: right;
-
 }
 
 #group_pic{
 	width: 40%;
-	height: auto; 
+	height: auto;
 }
 }
