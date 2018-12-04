@@ -23,7 +23,8 @@
 	text-align: right;
 }
 #logo_car {
-	margin-bottom:50px;
+	margin-bottom:20%;
+	padding-bottom: 10px;
 }
 #group_car{
 	margin-bottom:20%;
@@ -47,7 +48,7 @@
 }
 .blue_button {
 	background-color: #1b2a51;
-	color: white; 
+	color: white;
 }
 .contact {
 	margin-top: 30px;
