@@ -95,15 +95,12 @@
 
 }
 #logo_car_text{
-	margin:0px;
-	width: 30%;
-	height: 10%
+	font-size: 0px;
 }
 
 
 #group_car {
-	position: relative;
-	float: right;
+	font-size: 0px;
 }
 #group_pic{
 	width:50%;
