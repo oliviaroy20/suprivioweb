@@ -33,6 +33,9 @@
 #placeholder_pic{
 	width: 90%;
 	padding-bottom: 20px;
+	/* padding-top: 20px; */
+}
+#text_about{
 	padding-top: 20px;
 }
 .carousel-caption{
