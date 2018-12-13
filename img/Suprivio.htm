@@ -1,0 +1,475 @@
+
+<!-- saved from url=(0085)file:///Users/Olivia/Documents/NotreDame/Senior/Startup/suprivio/web-client/demo.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Suprivio</title>
+	
+	<link rel="stylesheet" href="./Suprivio_files/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="icon" href="./Suprivio_files/S_logo.png">
+<style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
+  <body>
+	  <nav class="navbar navbar-expand-sm navbar-light">
+	  	<a class="navbar-brand" href="file:///Users/Olivia/Documents/NotreDame/Senior/">
+			<img src="./Suprivio_files/S_logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+			<img src="./Suprivio_files/logo_name.png" height="30" class="d-inline-block align-to" alt="Suprivio">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav">
+		      <li class="nav-item">
+                  <a class="nav-link" href="http://www.suprivio.com/index.html">Home</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="http://www.suprivio.com/about.html">Our Story</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="http://www.suprivio.com/pricing.html">Pricing</a>
+		      </li>
+			  <li class="nav-item">
+		        <a class="nav-link" href="http://www.suprivio.com/contact.html">Contact Us</a>
+		      </li>
+		    </ul>
+		  </div>
+        <a id="companyName" class="nav-link" page="5"></a>
+	  </nav>
+
+      <br>
+
+      <div id="demoHeader" class="alert alert-info" role="alert" style="display : none">
+          <h4 class="alert-heading">Welcome to the Pro Forma Calculator</h4>
+          <p>Here you will follow simple steps to generate your financial outlooks with ease. To navigate back to our website follow the links
+in the navigation bar.</p>
+          <hr>
+          <div>
+              <p class="mb-0">Follow the instructions below to create your tailor made Pro Forma!</p>
+        </div>
+      </div>
+
+      <br>
+
+      <div id="navButtonGroup" class="btn-toolbar supriv-nav-bar" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group mr-2" role="group" aria-label="First group">
+              <button id="generalTab" class="btn btn-secondary nav-btn" type="button">General</button>
+          </div>
+          <div class="btn-group mr-2" role="group" aria-label="Second group">
+              <button id="revenueTab" class="btn btn-secondary nav-btn" type="button">Revenue</button>
+          </div>
+          <div class="btn-group mr-2" role="group" aria-label="Third group">
+              <button id="payrollTab" class="btn btn-secondary nav-btn" type="button">Payroll</button>
+          </div>
+          <div class="btn-group mr-2" role="group" aria-label="Fourth group">
+              <button id="expensesTab" class="btn btn-secondary nav-btn" type="button">Expenses</button>
+          </div>
+          <div class="btn-group mr-2" role="group" aria-label="Fifth group">
+              <button id="investmentsTab" class="btn btn-secondary nav-btn" type="button">Investments</button>
+          </div>
+          <div class="btn-group mr-2" role="group" aria-label="Sixth group">
+              <button id="overviewTab" class="btn btn-secondary curr-nav nav-btn" type="button">Overview</button>
+          </div>
+      </div>
+
+      <br>
+
+      <div id="progressBarDiv" class="progress">
+          <div id="progressBar" class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
+      </div>
+
+      <br>
+      <h2 id="sectionHeaderLabel">Financial Overview</h2>
+      <br>
+
+      <!-- View 0: General Information -->
+
+      <div id="view0" style="display : none">
+          <h5 class="helper-text">Enter the name of your Company</h5>
+
+          <div id="rent" class="input-group supriv-input">
+              <div class="input-group-prepend">
+                  <span class="input-group-text" id="comoanyNameSpan">Company Name</span>
+              </div>
+              <input id="companyNameInput" type="text" placeholder="enter your company name" class="form-control supriv-entry">
+              <button tabindex="0" type="button" class="btn btn-secondary supriv-help-btn" data-trigger="focus" data-container="body" data-toggle="popover" data-placement="top" title="" data-content="Enter the name of your company." data-original-title="Company Name">Help</button>
+          </div>
+
+
+
+          <br>
+          <h5 class="helper-text">Select your City Segment based on Cost</h5>
+          <div class="double-dd-wrapper">
+              <div class="dropdown supriv-dd-wrapper">
+                  <button class="btn btn-secondary dropdown-toggle supriv-dd-btn" type="button" id="citySegmentDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      City Segments</button>
+                  <div class="dropdown-menu supriv-dd" aria-labelledby="dropdownMenu2">
+                      <button class="dropdown-item supriv-dd-item" type="button">Very Large - New York, San Francisco</button>
+                      <button class="dropdown-item supriv-dd-item" type="button">Large - Chicago, Los Angeles</button>
+                      <button class="dropdown-item supriv-dd-item" type="button">Medium - Minneapolis, Indianapolis</button>
+                      <button class="dropdown-item supriv-dd-item" type="button">Small - Boise, Fargo</button>
+                  </div>
+                  <button tabindex="0" type="button" class="btn btn-secondary supriv-help-btn" data-trigger="focus" data-container="body" data-toggle="popover" data-placement="top" title="" data-content="Select the segment that best represents the city in which your
+startup is working." data-original-title="City Segment">Help</button>
+
+
+              </div>
+            </div>
+            <br>
+      </div>
+
+      <!-- View 1: Revenue -->
+
+      <div id="view1" style="display : none">
+          <h5 class="helper-text">Enter your Average Contract Value for the next three years</h5>
+          <div id="acv" class="input-group supriv-input">
+              <div class="input-group-prepend">
+                  <span class="input-group-text" id="acvLabel">Average Contract Value</span>
+              </div>
+                <input id="acvYear1" type="number" min="0" step="1" class="form-control supriv-entry">
+                <input id="acvYear2" type="number" min="0" step="1" class="form-control supriv-entry">
+                <input id="acvYear3" type="number" min="0" step="1" class="form-control supriv-entry">
+                <button tabindex="0" type="button" class="btn btn-secondary supriv-help-btn" data-trigger="focus" data-container="body" data-toggle="popover" data-placement="top" title="" data-content="Enter the average value of your contracts for each of
+the next 3 years." data-original-title="Average Contract Value">Help</button>
+          </div>
+          <br>
+          <h5 class="helper-text">Enter the number of <i>NEW</i> contracts for the next three years</h5>
+          <div id="numCont" class="input-group supriv-input">
+              <div class="input-group-prepend">
+                  <span class="input-group-text" id="numContLabel">Number of New Contracts</span>
+              </div>
+              <input id="numContYear1" type="number" min="0" step="1" class="form-control supriv-entry">
+              <input id="numContYear2" type="number" min="0" step="1" class="form-control supriv-entry">
+              <input id="numContYear3" type="number" min="0" step="1" class="form-control supriv-entry">
+              <button tabindex="0" type="button" class="btn btn-secondary supriv-help-btn" data-trigger="focus" data-container="body" data-toggle="popover" data-placement="top" title="" data-content="Enter the number of new contracts you estimate your
+company will receive for each of the next 3 years." data-original-title="Number of New Contracts">Help</button>
+          </div>
+      </div>
+
+      <!-- View 2: Payroll -->
+
+      <div id="view2" style="display : none">
+          <h5 class="helper-text">Add an Employee</h5>
+          <div id="employee" class="input-group supriv-input-lg">
+              <div class="input-group-prepend">
+                  <span class="input-group-text" id="employeeLabel">Employee</span>
+              </div>
+              <input id="employeeRole" placeholder="job title" type="text" class="form-control supriv-entry">
+			  <div class="dropdown">
+	              <button class="btn btn-secondary dropdown-toggle supriv-dd-btn-sm" type="button" id="employeeCategoryDD" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</button>
+	              <div id="employeeCategory" class="dropdown-menu supriv-dd" aria-labelledby="categories">
+	                  <button class="dropdown-item supriv-dd-item" type="button">COGS</button>
+	                  <button class="dropdown-item supriv-dd-item" type="button">R + D</button>
+	                  <button class="dropdown-item supriv-dd-item" type="button">S + M</button>
+	                  <button class="dropdown-item supriv-dd-item" type="button">G + A</button>
+	              </div>
+			  </div>
+
+              <input id="employeeSalary" placeholder="salary" type="number" class="form-control supriv-entry">
+
+              <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle supriv-dd-btn-sm" type="button" id="employeeMonthDD" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Start Month
+                  </button>
+                  <div id="employeeMonth" class="dropdown-menu supriv-dd" aria-labelledby="employeeMonthDD">
+                      <button class="dropdown-item supriv-dd-item">January</button>
+                      <button class="dropdown-item supriv-dd-item">February</button>
+                      <button class="dropdown-item supriv-dd-item">March</button>
+                      <button class="dropdown-item supriv-dd-item">April</button>
+                      <button class="dropdown-item supriv-dd-item">May</button>
+                      <button class="dropdown-item supriv-dd-item">June</button>
+                      <button class="dropdown-item supriv-dd-item">July</button>
+                      <button class="dropdown-item supriv-dd-item">August</button>
+                      <button class="dropdown-item supriv-dd-item">September</button>
+                      <button class="dropdown-item supriv-dd-item">October</button>
+                      <button class="dropdown-item supriv-dd-item">November</button>
+                      <button class="dropdown-item supriv-dd-item">December</button>
+                  </div>
+              </div>
+              <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle  supriv-dd-btn-sm" type="button" id="employeeYearDD" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Start Year
+                  </button>
+                  <div id="employeeYear" class="dropdown-menu supriv-dd" aria-labelledby="employeeYearDD">
+                      <button class="dropdown-item supriv-dd-item">2018</button>
+                      <button class="dropdown-item supriv-dd-item">2019</button>
+                      <button class="dropdown-item supriv-dd-item">2020</button>
+                      <button class="dropdown-item supriv-dd-item">2021</button>
+                      <button class="dropdown-item supriv-dd-item">2022</button>
+                      <button class="dropdown-item supriv-dd-item">2023</button>
+                  </div>
+              </div>
+              <button tabindex="0" type="button" class="btn btn-secondary supriv-help-btn" data-trigger="focus" data-container="body" data-toggle="popover" data-placement="top" title="" data-content="To add an employee, enter their job title, business category,
+salary, and their start month and year." data-original-title="Add an Employee">Help</button>
+              <button id="addEmployeeButton" class="btn btn-secondary supriv-add-btn" type="button">Add</button>
+          </div>
+          <br>
+
+          <h5 class="helper-text">Current Employees</h5>
+          <table class="table table-striped supriv-table" id="employeeTable">
+              <thead>
+                  <tr>
+                      <th class="supriv-table-item" scope="col">#</th>
+                      <th class="supriv-table-item" scope="col">Role</th>
+                      <th class="supriv-table-item" scope="col">Category</th>
+                      <th class="supriv-table-item" scope="col">Salary</th>
+                      <th class="supriv-table-item" scope="col">Month</th>
+                      <th class="supriv-table-item" scope="col">Year</th>
+                  </tr>
+              </thead>
+              <tbody>
+              </tbody>
+          </table>
+      </div>
+
+
+      <!-- View 3: Expenses -->
+
+      <div id="view3" style="display : none">
+          <h5 class="helper-text">Generate Your Estimates</h5>
+          <div class="supriv-btn-wrapper">
+              <button id="generateExpensesButton" class="btn btn-secondary supriv-action-btn" type="button">Generate Expenses</button>
+              <button tabindex="0" type="button" class="btn btn-secondary supriv-help-btn" data-trigger="focus" data-container="body" data-toggle="popover" data-placement="top" title="" data-content="Click &#39;Generate Expenses&#39; button to calculate your projected
+expenses from your Company Profile." data-original-title="Generate Expenses">Help</button>
+          </div>
+          <br>
+          <h5 class="helper-text">Adjust your Rent for the next three years</h5>
+          <div id="rent" class="input-group supriv-input">
+              <div class="input-group-prepend">
+                  <span class="input-group-text" id="rentLabel">Rent</span>
+              </div>
+              <input id="rentYear1" type="number" min="0" step="1" class="form-control supriv-entry">
+              <input id="rentYear2" type="number" min="0" step="1" class="form-control supriv-entry">
+              <input id="rentYear3" type="number" min="0" step="1" class="form-control supriv-entry">
+              <button tabindex="0" type="button" class="btn btn-secondary supriv-help-btn" data-trigger="focus" data-container="body" data-toggle="popover" data-placement="top" title="" data-content="Enter the amount you plan on spending on Rent for each of the next 3
+years." data-original-title="Rent">Help</button>
+          </div>
+          <br>
+          <h5 class="helper-text">Adjust your Insurance for the next three years</h5>
+          <div id="insurance" class="input-group supriv-input">
+              <div class="input-group-prepend">
+                  <span class="input-group-text" id="insuranceLabel">Insurance</span>
+              </div>
+              <input id="insuranceYear1" type="number" min="0" step="1" class="form-control supriv-entry">
+              <input id="insuranceYear2" type="number" min="0" step="1" class="form-control supriv-entry">
+              <input id="insuranceYear3" type="number" min="0" step="1" class="form-control supriv-entry">
+              <button tabindex="0" type="button" class="btn btn-secondary supriv-help-btn" data-trigger="focus" data-container="body" data-toggle="popover" data-placement="top" title="" data-content="Enter the amount you plan on spending on Insurance for each of the
+next 3 years." data-original-title="Insurance">Help</button>
+          </div>
+          <br>
+          <h5 class="helper-text">Adjust your Office Supplies Costs for the next three years</h5>
+          <div id="supplies" class="input-group supriv-input">
+              <div class="input-group-prepend">
+                  <span class="input-group-text" id="suppliesLabel">Office Supplies</span>
+              </div>
+              <input id="suppliesYear1" type="number" min="0" step="1" class="form-control supriv-entry">
+              <input id="suppliesYear2" type="number" min="0" step="1" class="form-control supriv-entry">
+              <input id="suppliesYear3" type="number" min="0" step="1" class="form-control supriv-entry">
+              <button tabindex="0" type="button" class="btn btn-secondary supriv-help-btn" data-trigger="focus" data-container="body" data-toggle="popover" data-placement="top" title="" data-content="Enter the amount you plan on spending on Office Supplies for each of
+the next 3 years." data-original-title="Supplies">Help</button>
+          </div>
+          <br>
+          <h5 class="helper-text">Adjust your Utilities for the next three years</h5>
+          <div id="utilities" class="input-group supriv-input">
+              <div class="input-group-prepend">
+                  <span class="input-group-text" id="suppliesLabel">Utilities</span>
+              </div>
+              <input id="utilitiesYear1" type="number" min="0" step="1" class="form-control supriv-entry">
+              <input id="utilitiesYear2" type="number" min="0" step="1" class="form-control supriv-entry">
+              <input id="utilitiesYear3" type="number" min="0" step="1" class="form-control supriv-entry">
+              <button tabindex="0" type="button" class="btn btn-secondary supriv-help-btn" data-trigger="focus" data-container="body" data-toggle="popover" data-placement="top" title="" data-content="Enter the amount you plan on spending on Utilities for each of the
+next 3 years." data-original-title="Utilities">Help</button>
+          </div>
+
+          <br>
+          <div class="supriv-btn-wrapper">
+              <button id="showhideExpensesButton" class="btn btn-secondary supriv-show-btn" type="button">Show More</button>
+          </div>
+          <br>
+          <div id="view3_extra" style="display : none">
+              <h5 class="helper-text">Add an Expense</h5>
+              <div id="expense" class="input-group supriv-input-lg">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text" id="expenseLabel">Expense</span>
+                  </div>
+                  <input id="expenseName" placeholder="name" type="text" class="form-control supriv-entry">
+				  <div class="dropdown">
+					  <button class="btn btn-secondary dropdown-toggle supriv-dd-btn-sm" type="button" id="expenseCategoryDD" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cateogry</button>
+	                  <div id="expenseCategory" class="dropdown-menu supriv-dd" aria-labelledby="expenseCategoryDD">
+	                      <button class="dropdown-item supriv-dd-item" type="button">COGS</button>
+	                      <button class="dropdown-item supriv-dd-item" type="button">R + D</button>
+	                      <button class="dropdown-item supriv-dd-item" type="button">S + M</button>
+	                      <button class="dropdown-item supriv-dd-item" type="button">G + A</button>
+	                  </div>
+				  </div>
+                  <input id="expenseAmount" placeholder="amount" type="number" class="form-control supriv-entry">
+                  <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle supriv-dd-btn-sm" type="button" id="expenseFrequencyDD" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Frequency
+                      </button>
+                      <div class="dropdown-menu supriv-dd" aria-labelledby="expenseFrequencyDD">
+                          <button class="dropdown-item supriv-dd-item">One Time</button>
+                          <button class="dropdown-item supriv-dd-item">Monthly</button>
+                          <button class="dropdown-item supriv-dd-item">Quarterly</button>
+                          <button class="dropdown-item supriv-dd-item">Bi-Annually</button>
+                          <button class="dropdown-item supriv-dd-item">Annually</button>
+                      </div>
+                  </div>
+                  <button tabindex="0" type="button" class="btn btn-secondary supriv-help-btn" data-trigger="focus" data-container="body" data-toggle="popover" data-placement="top" title="" data-content="To add an Expense Entry, enter its name, category, amount, and
+frequency." data-original-title="Add an Expense">Help</button>
+                  <button id="addExpensesButton" class="btn btn-secondary supriv-add-btn" type="button">Add</button>
+            </div>
+              <br>
+              <h5 class="helper-text">Current Expenses</h5>
+              <table class="table table-striped supriv-table" id="expensesTable">
+                  <thead>
+                      <tr>
+                          <th class="supriv-table-item" scope="col">#</th>
+                          <th class="supriv-table-item" scope="col">Name</th>
+                          <th class="supriv-table-item" scope="col">Category</th>
+                          <th class="supriv-table-item" scope="col">Amount</th>
+                          <th class="supriv-table-item" scope="col">Frequency</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+              </table>
+
+          </div>
+          <br>
+
+      </div>
+
+      <!-- View 4: Investments -->
+
+      <div id="view4" style="display : none">
+
+          <h5 class="helper-text">Add an Investment</h5>
+          <div id="investment" class="input-group supriv-input">
+              <div class="input-group-prepend">
+                  <span class="input-group-text" id="investmentLabel">Investment</span>
+              </div>
+			  <input id="investmentSource" type="text" class="form-control supriv-entry" placeholder="source">
+              <input id="investmentAmount" type="number" class="form-control supriv-entry" placeholder="amount">
+			  <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle supriv-dd-btn-sm" type="button" id="investmentMonthDD" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Month
+                  </button>
+                  <div id="investmentMonth" class="dropdown-menu supriv-dd" aria-labelledby="investmentMonthDD">
+                      <button class="dropdown-item supriv-dd-item">January</button>
+                      <button class="dropdown-item supriv-dd-item">February</button>
+                      <button class="dropdown-item supriv-dd-item">March</button>
+                      <button class="dropdown-item supriv-dd-item">April</button>
+                      <button class="dropdown-item supriv-dd-item">May</button>
+                      <button class="dropdown-item supriv-dd-item">June</button>
+                      <button class="dropdown-item supriv-dd-item">July</button>
+                      <button class="dropdown-item supriv-dd-item">August</button>
+                      <button class="dropdown-item supriv-dd-item">September</button>
+                      <button class="dropdown-item supriv-dd-item">October</button>
+                      <button class="dropdown-item supriv-dd-item">November</button>
+                      <button class="dropdown-item supriv-dd-item">December</button>
+                  </div>
+              </div>
+              <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle  supriv-dd-btn-sm" type="button" id="investmentYearDD" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Year
+                  </button>
+                  <div id="investmentYear" class="dropdown-menu supriv-dd" aria-labelledby="investmentYearDD">
+                      <button class="dropdown-item supriv-dd-item">2018</button>
+                      <button class="dropdown-item supriv-dd-item">2019</button>
+                      <button class="dropdown-item supriv-dd-item">2020</button>
+                      <button class="dropdown-item supriv-dd-item">2021</button>
+                      <button class="dropdown-item supriv-dd-item">2022</button>
+                      <button class="dropdown-item supriv-dd-item">2023</button>
+                  </div>
+              </div>
+              <button tabindex="0" type="button" class="btn btn-secondary supriv-help-btn" data-trigger="focus" data-container="body" data-toggle="popover" data-placement="top" title="" data-content="To add an Investment Entry, enter the amount as well as the
+month and year that it was received." data-original-title="Add an Investment">Help</button>
+              <button id="addInvestmentButton" class="btn btn-secondary supriv-add-btn" type="button">Add</button>
+          </div>
+          <br>
+
+          <h5 class="helper-text">Current Investments</h5>
+          <table class="table table-striped supriv-table" id="investmentsTable">
+              <thead>
+                  <tr>
+                      <th class="supriv-table-item" scope="col">#</th>
+					  <th class="supriv-table-item" scope="col">Source</th>
+                      <th class="supriv-table-item" scope="col">Amount</th>
+                      <th class="supriv-table-item" scope="col">Month</th>
+                      <th class="supriv-table-item" scope="col">Year</th>
+                  </tr>
+              </thead>
+              <tbody>
+              </tbody>
+          </table>
+
+        </div>
+
+
+      <!-- View 5: Financial Overview -->
+
+      <div id="view5" style="display : block">
+		  <div class="container-fluid">
+			  <div id="navButtonGroup" class="btn-toolbar supriv-nav-bar" role="toolbar" aria-label="Toolbar with button groups">
+		          <div class="btn-group mr-2" role="group" aria-label="First group">
+		              <button id="saveButton" class="btn btn-secondary nav-btn" type="button">Save</button>
+		          </div>
+		          <div class="btn-group mr-2" role="group" aria-label="Second group">
+		              <button id="exportButton" class="btn btn-secondary nav-btn" type="button">Export</button>
+		          </div>
+		          <div class="btn-group mr-2" role="group" aria-label="Third group">
+		              <button id="actualsButton" class="btn btn-secondary nav-btn" type="button">Upload Actuals</button>
+		          </div>
+		      </div>
+		  <br>
+			  <div class="row justify-content-md-center">
+				  <div class="chart-container col-lg-8" style="position: relative; width:100%"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+					<h3 style="text-align: center">Above the line</h3>
+					<h5 style="text-align: center">Revenue and Cost of Goods Sold</h5>
+					<canvas id="revenue" style="display: block; height: 625px; width: 1250px;" height="833" width="1666" class="chartjs-render-monitor"></canvas>
+				</div>
+			  </div>
+			  <div class="row justify-content-md-center">
+				  <div class="chart-container col-lg-8" style="position: relative; width:100%"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+					<h5 style="text-align: center">Gross Margin</h5>
+					<canvas id="grossMargin" height="833" width="1666" class="chartjs-render-monitor" style="display: block; height: 625px; width: 1250px;"></canvas>
+				</div>
+			  </div>
+			  <!-- <div class="row">
+				  <div class="chart-container col-lg-8" style="position: relative; width:100%">
+					<h4>Cash Remaining</h4>
+					<canvas id="cashLevel"></canvas>
+				</div>
+				<div class="chart-container col-lg-4">
+					<h4>Average Expenses Percentage</h4>
+					<canvas id="expenses"></canvas>
+					<div class="row">
+						<canvas id="stackedExpenses"></canvas>
+					</div>
+				</div>
+			</div> -->
+		</div>
+      </div>
+
+      <br>
+	  <div>
+      <button id="endingButton" class="btn btn-lg btn-info dir-nav" type="button" style="display : block">Previous</button>
+  	</div>
+      <div id="buttonGroupWrapper" style="display : none">
+          <div id="buttonNextPrevGroup" class="btn-group mr-2" role="group" aria-label="First group">
+              <button id="prevButton" class="btn btn-lg btn-info dir-nav" type="button">Previous</button>
+              <button id="nextButton" class="btn btn-lg btn-info dir-nav" type="button">Next</button>
+          </div>
+      </div>
+
+        <br><br><br><br><br>
+
+    <script src="./Suprivio_files/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="./Suprivio_files/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="./Suprivio_files/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="./Suprivio_files/Chart.bundle.js"></script>
+    <link rel="stylesheet" href="./Suprivio_files/style.css">
+    <script src="./Suprivio_files/general.js"></script>
+	<script src="./Suprivio_files/dashboard.js"></script>
+  
+
+</body></html>

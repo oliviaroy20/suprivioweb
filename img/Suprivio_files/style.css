@@ -1,0 +1,305 @@
+.carousel-item img{
+    width: auto;
+    height: 500px;
+    max-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: lightgrey;
+
+
+}
+.carousel-inner{
+    background-color: lightgrey;
+    height: 500px;
+    max-height: 500px;
+
+
+}
+.carousel{
+    margin-bottom: 4rem;
+}
+.carousel_img {
+    text-align: right;
+}
+#logo_car {
+    margin-bottom:20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+#group_car{
+    margin-bottom:20%;
+    position: relative;
+    left: 60%;
+    float: right;
+}
+.carousel-caption{
+    color: #1b2a51;
+    text-align: center;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.marketing .col-lg-4{
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.blue_button {
+    background-color: #1b2a51;
+    color: white;
+}
+.contact {
+    margin-top: 30px;
+}
+.signin {
+    margin-top: 30px;
+    text-align: center;
+    width:50%
+}
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    display: block;
+}
+.navbar{
+    background-color: lightgrey;
+}
+.card-header{
+    background-color: #1b2a51;
+    color: white;
+}
+@media (min-width: 992px)
+.col-lg-4{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 33.333333%
+    max-width: 33.33333333333;
+}
+#logo-car{
+    margin:0px;
+}
+#group_car{
+    flex-shrink: 50;
+    left: 70%;
+    margin-bottom:0;
+}
+#group_pic{
+    width: 50%
+}
+#demoHeader{
+    color : #1b2a51;
+    background-color : lightgray;
+    border-color : #1b2a51;
+    width : 60%;
+    margin : auto;
+    text-align : center;
+}
+
+.alert-info hr, hr {
+    border-top-color: #1b2a51;
+    width : 70%;
+}
+#companyNameLabel{
+    width : 60%;
+    margin : auto;
+}
+
+#companyNameSpan{
+    background-color: lightgray;
+    color : #1b2a51;
+    border-color: #1b2a51;
+}
+
+#companyNameInput{
+    color : #1b2a51;
+    border-color: #1b2a51;
+}
+
+#endingButton{
+    background-color: #1b2a51;
+    color : white;
+    border-color : teal;
+    width : 30%;
+    margin-left : 35%;
+    margin-right : 35%;
+}
+
+#buttonGroupWrapper{
+    text-align : center;
+}
+
+#buttonNextPrevGroup{
+    width : 60%;
+    margin : auto;
+    display : inline-block;
+}
+
+#nextButton,
+#prevButton{
+    background-color: #1b2a51;
+    color : white;
+    border-color : teal;
+    width : 30%;
+}
+
+.hidden-button{
+    visibility : hidden;
+}
+
+#sectionHeaderLabel{
+    color: #1b2a51;
+    text-align : center;
+}
+
+#progressBarDiv{
+    background-color : lightgrey;
+    width : 60%;
+    height : 25px;
+    margin : auto;
+}
+
+#progressBar{
+    background-color : #1b2a51;
+}
+
+.supriv-nav-bar{
+    width : 80%;
+    margin : auto;
+    justify-content : center;
+}
+
+.nav-btn{
+    background-color : #1b2a51;
+    border-color : teal;
+}
+.curr-nav{
+    background-color : teal;
+    border-color : #1b2a51;
+}
+
+.nav-btn:hover,
+#prevButton:hover,
+#nextButton:hover,
+#endingButton:hover,
+.supriv-help-btn:hover,
+.supriv-btn:hover,
+.supriv-show-btn:hover,
+.supriv-action-btn:hover,
+.supriv-dd-btn:hover
+.supriv-btn-sm:hover{
+    background-color : lightgrey;
+    border-color : #1b2a51;
+    color : #1b2a51;
+}
+
+.supriv-dd-item:active{
+    background-color : #1b2a51;
+    border-color : #1b2a51;
+    color : white;
+}
+
+#companyName{
+    color : #1b2a51;
+}
+
+.supriv-input{
+    width : 60%;
+    margin : auto;
+}
+.supriv-input-lg{
+    width : 80%;
+    margin : auto;
+}
+
+.helper-text{
+    color : #1b2a51;
+    text-align : center;
+}
+.supriv-help-btn{
+    background-color : #1b2a51;
+    color : white;
+    text-align : center;
+}
+.supriv-action-btn{
+    background-color : #1b2a51;
+    color : white;
+    text-align : center;
+}
+#addInvestmentButton{
+    width : 10%;
+}
+.supriv-btn{
+    background-color : teal;
+    border-color : #1b2a51;
+    width : 30%;
+}
+.supriv-add-btn{
+    background-color : teal;
+    border-color : #1b2a51;
+    text-align : center;
+}
+.supriv-btn-sm{
+    background-color : teal;
+    color : white;
+    border-color : #1b2a51;
+    width : 10%;
+}
+.supriv-show-btn{
+    background-color : teal;
+    border-color : #1b2a51;
+    width : 15%;
+}
+.supriv-btn-wrapper{
+    text-align : center;
+}
+.supriv-text-wrapper{
+    text-align : center;
+}
+.supriv-text{
+    color : #1b2a51;
+}
+.supriv-label{
+    width : 30%;
+    text-align : left;
+}
+.supriv-text-block{
+    display : inline-flex;
+    width : 80%;
+    margin : auto;
+}
+.supriv-dd-wrapper{
+    width : 60%;
+    margin : auto;
+    display : block;
+}
+.double-dd-wrapper{
+    text-align : left;
+}
+.supriv-dd-btn{
+    background-color : #1b2a51;
+    width : 30%;
+}
+.supriv-dd-btn-sm{
+    background-color : #1b2a51;
+}
+.supriv-dd{
+    color : #1b2a51;
+    max-height : 200px;
+    overflow-y: auto;
+}
+.supriv-dd-item{
+    color : #1b2a51;
+}
+.supriv-table{
+    width : 80%;
+    margin : auto;
+}
+.supriv-table-item{
+    color : #1b2a51;
+}

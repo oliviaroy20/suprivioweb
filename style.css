@@ -1,15 +1,12 @@
 .carousel-item img{
 	width: auto;
-	height: 500px;
-	max-height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-	background-color: lightgrey;
 }
 .carousel-inner{
-	background-color: lightgrey;
-	height: 500px;
+
+ 	height: auto;
 	max-height: 500px;
 }
 .carousel{
@@ -131,4 +128,3 @@
 .nav-link{
 	width : max-content;
 }
-
